@@ -60,7 +60,7 @@ export default function LoginUsers() {
             setTimeout(()=>{
                 setMsg("");
                 //Redirecionando para a página HOME!
-                window.location.href = "/";
+                window.location.href = "/informativos/welcome";
             },5000);
 
         }else{
