@@ -297,10 +297,10 @@ export default function LoginUsers() {
           if (userType === "paciente") {
             // Redirecionamento para pacientes
             navigate.push("/informativos/welcome");
-          } else if (userType === "medico") {
+          } else {(userType === "medico") 
             // Redirecionamento para médicos
             navigate.push("/medico");
-          }
+          };
 
           setMsg("Login efetuado com Sucesso!!");
           setTimeout(() => {
