@@ -298,7 +298,7 @@ export default function LoginUsers() {
             navigate.push("/informativos/welcome");
           } else if (userType === "medico") {
             // Redirecionamento para médicos
-            navigate.push("/medico/dashboard");
+            navigate.push("/medico");
           }
 
           setMsg("Login efetuado com Sucesso!!");
