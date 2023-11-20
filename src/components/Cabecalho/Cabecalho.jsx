@@ -26,10 +26,9 @@ export default function Cabecalho() {
         <nav className='nav-login-on'>
           <ul>
           <li><Link className='nav-item' href="/informativos/welcome">HOME</Link></li>
-           
-            <li><Link className='nav-item' href="/usuario/Userid">USUARIO</Link></li>
-            <li><Link className='nav-item' href="/informativos/mortalidade">Informativos</Link></li>
-            <li><Link className='nav-item' onClick={handleLogout} href="/"><Image className='img-login' src={Sair} alt='Icone para sair do site, formato de porta abrindo'/></Link></li>
+          <li><Link className='nav-item' href="/usuario/Userid">USUARIO</Link></li>
+          <li><Link className='nav-item' href="/informativos/mortalidade">Informativos</Link></li>
+          <li><Link className='nav-item' onClick={handleLogout} href="/"><Image className='img-login' src={Sair} alt='Icone para sair do site, formato de porta abrindo'/></Link></li>
           </ul>
           <div>
             <p>{usuario.name} - {usuario.email}</p>
