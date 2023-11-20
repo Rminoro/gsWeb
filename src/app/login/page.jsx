@@ -281,15 +281,7 @@ export default function LoginUsers() {
         const result = await response.json();
         console.log("VALIDADO!!!!");
         if (result.status) {
-          // Gerando o TOKEN de acesso!
-          const token = Math.random().toString(36).substring(2) + Math.random().toString(36).substring(2);
-
-          // Armazenando o TOKEN no SessionStorage!
-          sessionStorage.setItem("token-user", token);
-
-          // Armazenando o objeto USUÁRIO no SessionStorage!
-          sessionStorage.setItem("user-info", JSON.stringify(result.user));
-
+         
           // Verificando o tipo de usuário
           const userType = result.user.type; // Você deve ajustar isso conforme a estrutura de seus dados
 
@@ -297,7 +289,7 @@ export default function LoginUsers() {
           if (userType === "paciente") {
             // Redirecionamento para pacientes
             navigate.push("/informativos/welcome");
-          } else {(userType === "medico") 
+          } else if(userType === "medico") {
             // Redirecionamento para médicos
             navigate.push("/medico");
           };
