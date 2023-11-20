@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "../components/styles/not-found.css"
+
 
 export default function Notfound() {
   return (

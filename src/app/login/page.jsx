@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-import "../../components/styles/login.css"
 
 export default function LoginUsers() {
   //Mensage de STATUS!
