@@ -181,7 +181,7 @@ export default function CadUsers({ params }) {
           setTimeout(() => {
             setMsg("");
             // Redirecionando para a página HOME!
-            navigate.push("/");
+            navigate.push("/informativos/welcome");
           }, 5000);
         } else {
           setMsg("Ocorreu um erro ao efetuar o cadastro!");

@@ -257,6 +257,7 @@ export default function LoginUsers() {
     email: "",
     senha: "",
     cpf: "",
+    type:"",
   });
 
   const handleChange = (e) => {
