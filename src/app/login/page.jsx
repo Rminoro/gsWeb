@@ -172,7 +172,7 @@ export default function LoginUsers() {
             navigate.push('/informativos/welcome');
           } else if (userType === 'medico') {
       
-            navigate.push('/medico/dashboard');
+            navigate.push('/medico');
           }
 
           setMsg('Login efetuado com Sucesso!!');

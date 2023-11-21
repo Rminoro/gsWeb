@@ -1,8 +1,6 @@
 // "use client"
-// import Image from "next/image";
-// import Link from "next/link";
+// import { useEffect, useState } from 'react';  // Importe o useState aqui
 // import CartilhaVacinacao from "@/components/cartilhaVacinacao/cartilhaVacinacao";
-// import { useEffect, useState } from "react";
 
 // export default function Home() {
 //   const [userInfo, setUserInfo] = useState(null);
@@ -18,6 +16,8 @@
 //     }
 //   }, []);
 
+//   const isMedico = userInfo && userInfo.type === 'medico';
+
 //   return (
 //     <div>
 //       <div className="container-home">
@@ -28,10 +28,9 @@
 //           ) : (
 //             <p>;</p>
 //           )}
-//            {userInfo && userInfo.type === 'medico' && (
-//             <CartilhaVacinacao userId="1" userType="medico" />
+//           {isMedico && (
+//             <CartilhaVacinacao userId="78" userType="medico" />
 //           )}
-  
 //         </div>
 //       </div>
 //       <div className="container-modelos">
@@ -40,9 +39,11 @@
 //     </div>
 //   );
 // }
-// ... (seu código existente)
-
 "use client"
+import { useEffect, useState } from 'react';  
+import CartilhaVacinacao from "@/components/cartilhaVacinacao/cartilhaVacinacao";
+
+
 export default function Home() {
   const [userInfo, setUserInfo] = useState(null);
 
@@ -70,8 +71,10 @@ export default function Home() {
             <p>;</p>
           )}
           {isMedico && (
-            <CartilhaVacinacao userId="78" userType="medico" />
+            <CartilhaVacinacao/>
           )}
+
+      
         </div>
       </div>
       <div className="container-modelos">
