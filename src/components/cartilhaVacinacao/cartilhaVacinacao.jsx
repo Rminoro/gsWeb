@@ -119,7 +119,7 @@ export default function Cartilha() {
     // Carrega a lista de usuários
     const fetchUsuarios = async () => {
       try {
-        const response = await fetch('/api/base/db.json');
+        const response = await fetch('/src/app/api/base/db.json');
         if (!response.ok) {
           throw new Error(`Erro HTTP! Status: ${response.status}`);
         }
